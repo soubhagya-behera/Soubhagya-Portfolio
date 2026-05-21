@@ -25,9 +25,7 @@ const emailJsConfig = {
 function getErrors(form, showAll = false, touched = {}) {
   return {
     name:
-      (showAll || touched.name) && !form.name.trim()
-        ? "Name is required"
-        : "",
+      (showAll || touched.name) && !form.name.trim() ? "Name is required" : "",
     email:
       (showAll || touched.email) && !/^\S+@\S+\.\S+$/.test(form.email)
         ? "Enter a valid email"
@@ -88,10 +86,9 @@ function Contact() {
         emailJsConfig.serviceId,
         emailJsConfig.templateId,
         {
-          from_name: form.name.trim(),
-          from_email: form.email.trim(),
+          name: form.name.trim(),
+          email: form.email.trim(),
           message: form.message.trim(),
-          to_email: profile.email,
         },
         { publicKey: emailJsConfig.publicKey },
       );
@@ -282,7 +279,13 @@ function Contact() {
   );
 }
 
-function ContactRow({ icon, label, children, violet = false, neutral = false }) {
+function ContactRow({
+  icon,
+  label,
+  children,
+  violet = false,
+  neutral = false,
+}) {
   const Icon = icon;
   const iconClass = neutral
     ? "bg-white/5 text-cyanGlow"
@@ -292,7 +295,9 @@ function ContactRow({ icon, label, children, violet = false, neutral = false }) 
 
   return (
     <div className="flex items-center gap-4">
-      <span className={`grid h-12 w-12 place-items-center rounded-2xl ${iconClass}`}>
+      <span
+        className={`grid h-12 w-12 place-items-center rounded-2xl ${iconClass}`}
+      >
         <Icon />
       </span>
 
