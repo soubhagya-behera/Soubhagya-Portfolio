@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Secure Digital Banking dashboard preview</title>
+  <desc id="desc">Dark banking dashboard illustration with cards, charts, transaction rows, and security accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#5b21b6"/>
+      <stop offset=".52" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="48" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="190" fill="#22d3ee" opacity=".12"/>
+  <circle cx="170" cy="640" r="220" fill="#a855f7" opacity=".14"/>
+  <rect x="76" y="72" width="1048" height="616" rx="34" fill="#050509" opacity=".78" stroke="#fff" stroke-opacity=".13"/>
+  <rect x="116" y="116" width="240" height="528" rx="28" fill="#0f1020" stroke="#fff" stroke-opacity=".09"/>
+  <rect x="396" y="116" width="688" height="150" rx="28" fill="url(#card)" stroke="#fff" stroke-opacity=".14"/>
+  <rect x="432" y="154" width="180" height="18" rx="9" fill="#fff" opacity=".9"/>
+  <rect x="432" y="196" width="300" height="34" rx="17" fill="#22d3ee" opacity=".35"/>
+  <rect x="820" y="154" width="196" height="76" rx="18" fill="#050509" opacity=".45" stroke="#fff" stroke-opacity=".13"/>
+  <path d="M873 205c36-54 72-54 108 0" fill="none" stroke="#67e8f9" stroke-width="10" stroke-linecap="round"/>
+  <rect x="396" y="298" width="326" height="346" rx="28" fill="#0f1020" stroke="#fff" stroke-opacity=".1"/>
+  <rect x="758" y="298" width="326" height="346" rx="28" fill="#0f1020" stroke="#fff" stroke-opacity=".1"/>
+  <path d="M438 572V438l64 58 72-112 92 156" fill="none" stroke="#a855f7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M804 570h224M804 510h178M804 450h204M804 390h148" stroke="#e5e7eb" stroke-opacity=".55" stroke-width="18" stroke-linecap="round"/>
+  <path d="M154 176h118M154 238h154M154 304h126M154 370h166M154 436h108" stroke="#e5e7eb" stroke-opacity=".45" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="306" cy="560" r="34" fill="#22d3ee" opacity=".7"/>
+  <path d="M292 560l10 11 22-27" fill="none" stroke="#050509" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

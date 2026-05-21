@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PingMe real-time chat system preview</title>
+  <desc id="desc">Chat application illustration with conversation bubbles, online users, and real-time signal lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#312e81"/>
+      <stop offset=".54" stop-color="#020617"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" x2="1">
+      <stop offset="0" stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="48" fill="url(#bg)"/>
+  <rect x="84" y="70" width="1032" height="620" rx="34" fill="#050509" opacity=".8" stroke="#fff" stroke-opacity=".12"/>
+  <rect x="126" y="118" width="262" height="524" rx="30" fill="#10111f" stroke="#fff" stroke-opacity=".1"/>
+  <rect x="430" y="118" width="644" height="524" rx="30" fill="#0b1020" stroke="#fff" stroke-opacity=".1"/>
+  <circle cx="184" cy="180" r="30" fill="#22d3ee" opacity=".8"/>
+  <path d="M238 172h92M238 202h54" stroke="#e5e7eb" stroke-opacity=".55" stroke-width="14" stroke-linecap="round"/>
+  <path d="M166 280h154M166 344h118M166 408h162M166 472h126" stroke="#e5e7eb" stroke-opacity=".38" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="330" cy="280" r="8" fill="#34d399"/>
+  <circle cx="298" cy="344" r="8" fill="#34d399"/>
+  <circle cx="340" cy="408" r="8" fill="#34d399"/>
+  <rect x="488" y="174" width="270" height="68" rx="28" fill="#1f2937"/>
+  <rect x="552" y="290" width="438" height="82" rx="32" fill="url(#bubble)" opacity=".78"/>
+  <rect x="488" y="420" width="362" height="82" rx="32" fill="#1f2937"/>
+  <rect x="646" y="546" width="344" height="62" rx="31" fill="url(#bubble)" opacity=".55"/>
+  <path d="M532 207h160M600 331h310M536 462h244M694 577h214" stroke="#fff" stroke-opacity=".72" stroke-width="14" stroke-linecap="round"/>
+  <path d="M956 178c26 22 42 52 42 86M1004 146c38 34 62 82 62 136" fill="none" stroke="#22d3ee" stroke-opacity=".65" stroke-width="12" stroke-linecap="round"/>
+</svg>

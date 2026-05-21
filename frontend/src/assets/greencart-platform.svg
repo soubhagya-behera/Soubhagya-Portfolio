@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">GreenCart e-commerce platform preview</title>
+  <desc id="desc">Modern e-commerce dashboard illustration with product cards, cart panel, and analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#064e3b"/>
+      <stop offset=".55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="48" fill="url(#bg)"/>
+  <rect x="76" y="72" width="1048" height="616" rx="34" fill="#050509" opacity=".78" stroke="#fff" stroke-opacity=".12"/>
+  <rect x="126" y="126" width="948" height="88" rx="28" fill="#111827" stroke="#fff" stroke-opacity=".1"/>
+  <circle cx="176" cy="170" r="22" fill="#34d399"/>
+  <path d="M222 170h226M828 170h166" stroke="#e5e7eb" stroke-opacity=".55" stroke-width="18" stroke-linecap="round"/>
+  <rect x="126" y="256" width="276" height="334" rx="28" fill="#0f172a" stroke="#fff" stroke-opacity=".11"/>
+  <rect x="462" y="256" width="276" height="334" rx="28" fill="#0f172a" stroke="#fff" stroke-opacity=".11"/>
+  <rect x="798" y="256" width="276" height="334" rx="28" fill="#0f172a" stroke="#fff" stroke-opacity=".11"/>
+  <circle cx="264" cy="374" r="74" fill="url(#accent)" opacity=".65"/>
+  <circle cx="600" cy="374" r="74" fill="#a855f7" opacity=".58"/>
+  <circle cx="936" cy="374" r="74" fill="#22d3ee" opacity=".56"/>
+  <path d="M188 500h152M188 544h102M524 500h152M524 544h108M860 500h152M860 544h118" stroke="#e5e7eb" stroke-opacity=".52" stroke-width="16" stroke-linecap="round"/>
+  <rect x="232" y="616" width="736" height="22" rx="11" fill="url(#accent)" opacity=".5"/>
+  <path d="M890 360h40l18 58h64" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="958" cy="454" r="12" fill="#fff" opacity=".85"/>
+  <circle cx="1012" cy="454" r="12" fill="#fff" opacity=".85"/>
+</svg>
