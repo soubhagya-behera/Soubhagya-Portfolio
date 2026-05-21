@@ -86,11 +86,12 @@ function Contact() {
         emailJsConfig.serviceId,
         emailJsConfig.templateId,
         {
-          name: form.name.trim(),
-          email: form.email.trim(),
-          message: form.message.trim(),
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          to_email: "soubhagyakb121@gmail.com",
         },
-        { publicKey: emailJsConfig.publicKey },
+        emailJsConfig.publicKey,
       );
 
       setStatus({
