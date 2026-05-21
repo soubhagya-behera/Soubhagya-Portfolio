@@ -37,7 +37,25 @@ Coming Soon
 
 ### Home Page
 
-![Home](./frontend/public/screenshots/homepage.png)
+![Home](./frontend/public/screenshots/home.png)
+
+---
+
+### About Section
+
+![About](./frontend/public/screenshots/about.png)
+
+---
+
+### Skills Section
+
+![Skills](./frontend/public/screenshots/skills.png)
+
+---
+
+### Technical Skills Section
+
+![Technical Skills](./frontend/public/screenshots/skill-parameter.png)
 
 ---
 
@@ -58,6 +76,8 @@ Coming Soon
 ```bash
 frontend/
 ├── public/
+│   ├── screenshots/
+│   └── resume.pdf
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -75,7 +95,7 @@ frontend/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Soubhagya-Portfolio.git
+git clone https://github.com/soubhagya-behera/Soubhagya-Portfolio.git
 ```
 
 Move to project folder
@@ -112,11 +132,10 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 
 ## 👨‍💻 Author
 
-Soubhagya Kumar Behera
+### Soubhagya Kumar Behera
 
 - GitHub: https://github.com/soubhagya-behera
-- LinkedIn: Add your LinkedIn link here
-
+- LinkedIn: https://www.linkedin.com/in/soubhagyakumar-java/
 ---
 
 ## ⭐ Support
