@@ -129,6 +129,12 @@ body::after {
   }
 }
 
+@keyframes profileRingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes pulseGlow {
   0%,
   100% {
@@ -165,10 +171,10 @@ body::after {
   }
 
   .glass-card {
-    @apply border border-white/10 bg-white/[0.06] shadow-glow backdrop-blur-xl;
+    @apply border border-white/10 bg-white/[0.06] shadow-glow backdrop-blur-md;
 
     box-shadow:
-      0 24px 80px rgba(0, 0, 0, 0.35),
+      0 18px 54px rgba(0, 0, 0, 0.32),
       inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
@@ -210,21 +216,11 @@ body::after {
   /* ========================= */
 
   .tech-badge-gradient {
-    background: linear-gradient(
-      90deg,
-      #ffffff,
-      #38bdf8,
-      #a855f7,
-      #ffffff
-    );
-
-    background-size: 200% auto;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-    animation: shimmer 3s linear infinite;
+    color: #ecfeff;
+    -webkit-text-fill-color: currentColor;
+    text-shadow:
+      0 0 6px rgba(34, 211, 238, 0.3),
+      0 0 10px rgba(168, 85, 247, 0.16);
   }
 
   /* ========================= */
@@ -306,7 +302,39 @@ body::after {
     animation: spinSlow 18s linear infinite;
   }
 
+  .profile-ring-spin {
+    animation: profileRingSpin 12s linear infinite;
+    will-change: transform;
+  }
+
   .pulse-glow {
     animation: pulseGlow 5s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 767px) {
+  .floating-glow,
+  .pulse-glow,
+  .spin-slow {
+    animation: none;
+  }
+
+  .glass-card {
+    backdrop-filter: blur(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .profile-ring-spin {
+    animation: none;
   }
 }

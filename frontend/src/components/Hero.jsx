@@ -9,45 +9,14 @@ import profileImage from "../assets/profile.jpeg";
 /* ========================= */
 
 const techBadges = [
-  {
-    label: "Microservices",
-    className: "left-[5%] top-[20%]",
-  },
-
-  {
-    label: "Springboot",
-    className: "right-[10%] top-[18%]",
-  },
-
-  {
-    label: "Java",
-    className: "left top-[6%] -translate-x-1/2",
-  },
-
-  {
-    label: "Docker",
-    className: "right-[4%] top-[45%]",
-  },
-
-  {
-    label: "MySQL",
-    className: "left-[4%] top-[46%]",
-  },
-
-  {
-    label: "React.js",
-    className: "left-[8%] bottom-[24%]",
-  },
-
-  {
-    label: "REST APIs",
-    className: "right-[6%] bottom-[24%]",
-  },
-
-  {
-    label: "AWS",
-    className: "left bottom-[18%] -translate-x-1/2",
-  },
+  {label: "Microservices", className: "left-[1%] top-[18%]",},
+  {label: "Springboot", className: "right-[6%] top-[18%]",},
+  {label: "Java", className: "left top-[8%] -translate-x-1/2",},
+  {label: "Docker", className: "right-[4%] top-[45%]",},
+  {label: "MySQL", className: "left-[4%] top-[45%]",},
+  {label: "React.js", className: "left-[10%] bottom-[24%]",},
+  {label: "REST APIs", className: "right-[10%] bottom-[24%]",},
+  {label: "AWS", className: "left bottom-[18%] -translate-x-1/2",},
 ];
 
 /* ========================= */
@@ -74,41 +43,21 @@ function Hero() {
 
       <div className="absolute inset-0 bg-radial-fade" />
 
-      <motion.div
+      <div
         aria-hidden="true"
-        animate={{
-          x: [0, 28, 0],
-          y: [0, -18, 0],
-          opacity: [0.28, 0.45, 0.28],
-        }}
-        transition={{
-          duration: 9,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute left-[6%] top-36 h-44 w-44 rounded-full bg-violetGlow/25 blur-3xl"
+        className="absolute left-[6%] top-36 h-44 w-44 rounded-full bg-violetGlow/15 blur-2xl"
       />
 
-      <motion.div
+      <div
         aria-hidden="true"
-        animate={{
-          x: [0, -24, 0],
-          y: [0, 22, 0],
-          opacity: [0.22, 0.42, 0.22],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute bottom-24 right-[8%] h-56 w-56 rounded-full bg-cyanGlow/20 blur-3xl"
+        className="absolute bottom-24 right-[8%] h-56 w-56 rounded-full bg-cyanGlow/14 blur-2xl"
       />
 
       <div className="absolute inset-x-0 top-24 h-px bg-gradient-to-r from-transparent via-cyanGlow/40 to-transparent" />
 
       {/* MAIN GRID */}
 
-      <div className="section-shell relative grid min-h-[calc(100vh-6rem)] items-center gap-10 !py-14 sm:!py-16 lg:min-h-[680px] lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 xl:min-h-[720px]">
+      <div className="section-shell relative grid min-h-0 items-center gap-10 !py-12 sm:!py-16 lg:min-h-[680px] lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 xl:min-h-[720px]">
         {/* LEFT SIDE */}
 
         <motion.div
@@ -197,53 +146,40 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mx-auto w-full max-w-[30rem] floating-glow sm:max-w-[34rem] lg:max-w-[36rem] xl:max-w-[39rem]"
+          className="mx-auto w-full max-w-[22.5rem] floating-glow sm:max-w-[34rem] lg:max-w-[36rem] xl:max-w-[39rem]"
         >
-          <div className="premium-border glass-card relative aspect-[1.02/1] overflow-hidden rounded-[2rem] p-5 shadow-black/20 sm:p-6">
+          <div className="premium-border glass-card relative aspect-[0.9/1] overflow-hidden rounded-[2rem] p-4 shadow-black/20 sm:aspect-[1.02/1] sm:p-6">
             {/* GLOW EFFECTS */}
 
-            <div className="pulse-glow absolute inset-12 rounded-full bg-gradient-to-tr from-violetGlow/[0.12] via-fuchsia-400/[0.07] to-cyanGlow/[0.16] blur-3xl" />
+            <div className="pulse-glow absolute inset-12 rounded-full bg-gradient-to-tr from-violetGlow/[0.08] via-fuchsia-400/[0.05] to-cyanGlow/[0.1] blur-2xl" />
 
-            <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyanGlow/[0.08] blur-3xl sm:h-96 sm:w-96" />
+            <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyanGlow/[0.055] blur-2xl sm:h-96 sm:w-96" />
 
-            <div className="absolute left-1/2 top-[46%] h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violetGlow/[0.06] blur-2xl sm:h-72 sm:w-72" />
+            <div className="absolute left-1/2 top-[46%] h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violetGlow/[0.04] blur-xl sm:h-72 sm:w-72" />
 
-            <div className="spin-slow absolute inset-4 rounded-[2rem] border border-dashed border-cyanGlow/20" />
+            <div className="spin-slow absolute inset-3 rounded-[1.75rem] border border-dashed border-cyanGlow/20 sm:inset-4 sm:rounded-[2rem]" />
 
             {/* INNER CONTAINER */}
 
-            <motion.div
-              animate={{ y: [0, -14, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative grid h-full place-items-center overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/12 via-white/[0.045] to-cyanGlow/[0.07]"
-            >
-              <div className="absolute -right-10 top-12 h-20 w-20 rounded-full bg-cyanGlow/25 blur-2xl" />
+            <div className="relative grid h-full place-items-center overflow-hidden rounded-[1.35rem] border border-white/10 bg-gradient-to-br from-white/12 via-white/[0.045] to-cyanGlow/[0.07] sm:rounded-[1.5rem]">
+              <div className="absolute -right-10 top-12 h-20 w-20 rounded-full bg-cyanGlow/16 blur-xl" />
 
-              <div className="absolute -left-10 bottom-24 h-24 w-24 rounded-full bg-violetGlow/[0.16] blur-2xl" />
+              <div className="absolute -left-10 bottom-24 h-24 w-24 rounded-full bg-violetGlow/[0.1] blur-xl" />
 
               {/* TECH BADGES */}
 
               {techBadges.map((badge, index) => (
                 <motion.span
                   key={badge.label}
-                  animate={{
-                    y: [0, index % 2 === 0 ? -8 : 8, 0],
-                  }}
-                  transition={{
-                    duration: 5.2 + index * 0.2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: index * 0.18,
-                  }}
+                  initial={{ opacity: 0, y: 8 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: index * 0.04 }}
                   whileHover={{
                     y: -3,
                     scale: 1.025,
                   }}
-                  className={`absolute z-20 hidden rounded-full border border-white/[0.08] bg-night/45 px-3 py-1.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] tech-badge-gradient shadow-md shadow-black/20 backdrop-blur-xl transition duration-300 hover:border-cyanGlow/25 hover:bg-cyanGlow/[0.08] sm:inline-flex ${badge.className}`}
+                  className={`absolute z-20 hidden rounded-full border border-cyanGlow/25 bg-slate-950/72 px-3.5 py-1.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-cyan-50 shadow-[0_10px_24px_rgba(0,0,0,0.35)] ring-1 ring-white/[0.04] backdrop-blur-xl transition duration-300 hover:border-cyanGlow/55 hover:bg-cyanGlow/15 hover:text-white hover:shadow-cyan sm:inline-flex ${badge.className}`}
                 >
                   {badge.label}
                 </motion.span>
@@ -251,7 +187,7 @@ function Hero() {
 
               {/* PROFILE IMAGE */}
 
-              <div className="relative z-10 -translate-y-6 flex items-center justify-center sm:h-64 sm:w-64 lg:h-72 lg:w-72">
+              <div className="relative z-10 -translate-y-8 flex h-52 w-52 items-center justify-center sm:h-64 sm:w-64 sm:-translate-y-6 lg:h-72 lg:w-72">
                 {/* OUTER ROTATING RING */}
 
                 <div className="absolute inset-0 rounded-full">
@@ -261,12 +197,7 @@ function Hero() {
 
                   {/* ROTATING BORDER */}
 
-                  <div
-  className="absolute inset-[-6px] rounded-full border-[3px] border-transparent border-t-cyan-400 border-r-fuchsia-500 shadow-[0_0_25px_rgba(34,211,238,0.7)]"
-  style={{
-    animation: "spin 4s linear infinite"
-  }}
-/>
+                  <div className="profile-ring-spin absolute inset-[-6px] rounded-full border-[3px] border-transparent border-t-cyan-400 border-r-fuchsia-500 shadow-[0_0_25px_rgba(34,211,238,0.7)]" />
 
                   {/* INNER GLOW RING */}
 
@@ -275,7 +206,7 @@ function Hero() {
 
                 {/* PROFILE IMAGE */}
 
-                <div className="relative h-52 w-52 overflow-hidden rounded-full border border-cyanGlow/35 shadow-cyan ring-8 ring-white/[0.035] sm:h-64 sm:w-64 lg:h-72 lg:w-72">
+                <div className="relative h-48 w-48 overflow-hidden rounded-full border border-cyanGlow/35 shadow-cyan ring-4 ring-white/[0.035] sm:h-64 sm:w-64 sm:ring-8 lg:h-72 lg:w-72">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-violetGlow/10 to-cyanGlow/10" />
 
                   <img
@@ -288,7 +219,7 @@ function Hero() {
 
               {/* BOTTOM STATS */}
 
-              <div className="absolute bottom-6 left-5 right-5 z-20 grid grid-cols-3 gap-2 sm:left-6 sm:right-6 sm:gap-3">
+              <div className="absolute bottom-4 left-4 right-4 z-20 grid grid-cols-3 gap-1.5 sm:bottom-6 sm:left-6 sm:right-6 sm:gap-3">
                 {heroStats.map((stat, index) => (
                   <motion.div
                     key={stat}
@@ -298,15 +229,15 @@ function Hero() {
                       duration: 0.45,
                       delay: 0.45 + index * 0.08,
                     }}
-                    className="rounded-2xl border border-white/10 bg-night/68 px-2.5 py-3 text-center shadow-2xl shadow-black/25 backdrop-blur-xl transition duration-300 hover:border-cyanGlow/35 hover:bg-cyanGlow/10"
+                    className="rounded-xl border border-white/10 bg-night/68 px-1.5 py-2 text-center shadow-lg shadow-black/20 backdrop-blur-sm transition duration-300 hover:border-cyanGlow/35 hover:bg-cyanGlow/10 sm:rounded-2xl sm:px-2.5 sm:py-3"
                   >
-                    <p className="text-[0.68rem] font-bold uppercase leading-snug tracking-[0.12em] text-slate-100 sm:text-xs">
+                    <p className="text-[0.58rem] font-bold uppercase leading-snug tracking-[0.08em] text-slate-100 sm:text-xs sm:tracking-[0.12em]">
                       {stat}
                     </p>
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

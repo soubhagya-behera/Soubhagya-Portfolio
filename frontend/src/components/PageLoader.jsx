@@ -5,7 +5,7 @@ function PageLoader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = window.setTimeout(() => setLoading(false), 850);
+    const timeout = window.setTimeout(() => setLoading(false), 350);
     return () => window.clearTimeout(timeout);
   }, []);
 
@@ -16,10 +16,10 @@ function PageLoader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.45 }}
-          className="fixed inset-0 z-[80] grid place-items-center bg-night/95 backdrop-blur-md"
+          className="fixed inset-0 z-[80] grid place-items-center bg-night/95"
         >
           <div className="relative grid place-items-center">
-            <div className="absolute h-36 w-36 rounded-full bg-gradient-to-r from-cyanGlow/25 to-violetGlow/25 blur-3xl" />
+            <div className="absolute h-32 w-32 rounded-full bg-gradient-to-r from-cyanGlow/16 to-violetGlow/16 blur-xl" />
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 1.2, repeat: Infinity, ease: "linear" }}

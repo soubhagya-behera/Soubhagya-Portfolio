@@ -9,9 +9,9 @@ import {
   FaTools,
 } from 'react-icons/fa';
 import { SiPostman, SiSpringboot, SiTailwindcss, SiVite } from 'react-icons/si';
-import bankingImage from '../assets/Secure-Digital-Banking-Management.png';
-import greenCartImage from '../assets/Greencart-Platform.png';
-import pingMeImage from '../assets/PingMe-Platform.png';
+import bankingImage from '../assets/Secure-Digital-Banking-Management.webp';
+import greenCartImage from '../assets/Greencart-Platform.webp';
+import pingMeImage from '../assets/PingMe-Platform.webp';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -42,25 +42,25 @@ export const skillGroups = [
     title: 'Frontend',
     icon: FaReact,
     accent: 'from-cyan-400 to-blue-500',
-    skills: ['React.js', 'JavaScript', 'HTML5', 'CSS3','Responsive Design'],
+    skills: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Responsive Design'],
   },
   {
     title: 'Backend',
     icon: FaJava,
     accent: 'from-fuchsia-400 to-violet-500',
-    skills: ['Spring Boot', 'Spring Security', 'JWT Authentication', 'REST APIs', 'Hibernate/JPA', 'Microservices'],
+    skills: ['Spring Boot', 'Spring MVC', 'Hibernate', 'JPA', 'Spring Security', 'JWT', 'REST APIs', 'Microservices', 'JDBC', 'Servlets', 'JSP'],
   },
   {
     title: 'Database',
     icon: FaDatabase,
     accent: 'from-emerald-300 to-cyan-500',
-    skills: ['MySQL', 'PostgreSQL', 'JDBC', 'Database Design'],
+    skills: ['MySQL', 'PostgreSQL', 'Database Design'],
   },
   {
-    title: 'Tools',
+    title: 'DevOps & Tools',
     icon: FaTools,
     accent: 'from-amber-300 to-fuchsia-500',
-    skills: ['Git', 'GitHub', 'Postman', 'Maven', 'JUnit', 'Mockito'],
+    skills: ['Git', 'GitHub', 'Maven', 'Postman', 'JUnit', 'Mockito', 'Docker',' AWS (EC2, S3)', 'CI/CD' ],
   },
 ];
 
@@ -79,7 +79,7 @@ export const skillLevels = [
 
   { name: 'JWT Authentication', level: 73, icon: FaCode },
 
-  { name: 'Hibernate/JPA', level: 72, icon: FaDatabase },
+  { name: 'MicroServices', level: 72, icon: FaDatabase },
 ];
 
 export const projects = [

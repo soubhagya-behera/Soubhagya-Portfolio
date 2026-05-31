@@ -22,33 +22,30 @@ authentication systems, and scalable REST API development.
             className="premium-border glass-card group flex h-full overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1.5 hover:border-cyanGlow/40 hover:shadow-cyan"
           >
             <div className="flex w-full flex-col">
-              <div className={`relative h-60 overflow-hidden bg-gradient-to-br sm:h-64 xl:h-60 ${project.gradient}`}>
+              <div className={`relative h-64 overflow-hidden bg-gradient-to-br sm:h-72 xl:h-64 ${project.gradient}`}>
                 {project.image && (
                   <img
                     src={project.image}
                     alt={project.imageAlt || `${project.title} screenshot`}
                     loading="lazy"
-                    className="absolute inset-0 h-full w-full object-cover object-center opacity-95 transition duration-700 ease-out group-hover:scale-110 group-hover:opacity-100"
+                    width="900"
+                    height="570"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full object-cover object-center opacity-100 saturate-[1.08] transition duration-700 ease-out group-hover:scale-105 group-hover:saturate-[1.16]"
                   />
                 )}
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,9,0.02)_0,rgba(5,5,9,0.12)_48%,rgba(5,5,9,0.78)_100%)] transition duration-700 group-hover:bg-[linear-gradient(180deg,rgba(5,5,9,0)_0,rgba(5,5,9,0.08)_48%,rgba(5,5,9,0.72)_100%)]" />
-                <div className="absolute inset-4 rounded-3xl border border-white/10 bg-night/5" />
+                <div className="absolute inset-4 rounded-3xl border border-white/10 bg-transparent transition duration-500 group-hover:border-cyanGlow/25" />
                 <div className="absolute left-7 top-7 flex gap-2">
                   <span className="h-3 w-3 rounded-full bg-rose-300/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-300/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-300/80" />
                 </div>
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: index * 0.2 }}
-                  className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-night/72 p-4 shadow-2xl shadow-black/25 backdrop-blur-xl"
-                >
-                  <p className="text-sm font-semibold text-cyanGlow">Project Preview</p>
-                  <h3 className="mt-1 text-[1.45rem] font-bold leading-snug">{project.title}</h3>
-                </motion.div>
               </div>
 
               <div className="flex flex-1 flex-col p-5 sm:p-6">
+                <h3 className="text-2xl font-bold leading-snug text-white">
+                  {project.title}
+                </h3>
                 <p className="text-sm leading-7 text-slate-300">{project.description}</p>
                 {project.metrics && (
                   <div className="mt-5 grid gap-2 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">

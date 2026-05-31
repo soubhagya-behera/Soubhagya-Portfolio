@@ -166,7 +166,7 @@ function Contact() {
             </ContactRow>
           </div>
 
-          <div className="mt-6 rounded-3xl border border-cyanGlow/15 bg-cyanGlow/[0.055] p-4 shadow-cyan backdrop-blur-xl">
+          <div className="mt-6 rounded-3xl border border-cyanGlow/15 bg-cyanGlow/[0.055] p-4 shadow-cyan backdrop-blur-sm">
             <div className="flex gap-3">
               <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-2xl bg-violetGlow/10 text-cyanGlow">
                 <FiCheckCircle />

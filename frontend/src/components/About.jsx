@@ -55,7 +55,7 @@ function About() {
               "REST APIs",
               "MySQL",
               "React",
-              "Backend Architecture",
+              "Backend Development",
               "Responsive UI",
             ].map((item) => (
               <span

@@ -36,8 +36,8 @@ function Navbar() {
       transition={{ duration: 0.45 }}
       className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ${
         scrolled
-          ? "border-white/10 bg-night/78 shadow-glow backdrop-blur-2xl"
-          : "border-white/[0.03] bg-night/30 backdrop-blur-lg"
+          ? "border-white/10 bg-night/84 shadow-glow backdrop-blur-md"
+          : "border-white/[0.03] bg-night/50 backdrop-blur-sm"
       }`}
     >
       <nav className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
@@ -76,7 +76,7 @@ function Navbar() {
                 {isActive && (
                   <motion.span
                     layoutId="active-nav"
-                    className="absolute inset-0 rounded-full border border-cyanGlow/25 bg-cyanGlow/10 backdrop-blur-md"
+                    className="absolute inset-0 rounded-full border border-cyanGlow/25 bg-cyanGlow/10"
                     transition={{ type: "spring", stiffness: 360, damping: 30 }}
                   />
                 )}
@@ -103,7 +103,7 @@ function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.98 }}
             transition={{ duration: 0.22 }}
-            className="mx-5 mb-4 overflow-hidden rounded-3xl border border-white/10 bg-night/95 p-3 shadow-glow backdrop-blur-xl md:hidden"
+            className="mx-5 mb-4 overflow-hidden rounded-3xl border border-white/10 bg-night/95 p-3 shadow-glow backdrop-blur-sm md:hidden"
           >
             {navLinks.map((link, index) => (
               <motion.a
