@@ -104,7 +104,7 @@ export const projects = [
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: greenCartImage,
     imageAlt: 'GreenCart e-commerce platform preview',
-    github: profile.github,
+    github: 'https://github.com/soubhagya-behera/GreenCart',
     demo: '',
   },
   {
