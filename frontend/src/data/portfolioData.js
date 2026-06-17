@@ -1,13 +1,4 @@
-import {
-  FaCode,
-  FaDatabase,
-  FaEnvelope,
-  FaGithub,
-  FaJava,
-  FaLinkedin,
-  FaReact,
-  FaTools,
-} from 'react-icons/fa';
+import {FaCode, FaDatabase, FaEnvelope, FaGithub, FaJava, FaLinkedin, FaReact, FaTools, } from 'react-icons/fa';
 import { SiPostman, SiSpringboot, SiTailwindcss, SiVite } from 'react-icons/si';
 import bankingImage from '../assets/Secure-Digital-Banking-Management.png';
 import greenCartImage from '../assets/Greencart-Platform.webp';
@@ -93,17 +84,6 @@ export const skillGroups = [
       'CI/CD',
     ],
   },
-];
-
-export const skillLevels = [
-  { name: 'Java', level: 85, icon: FaJava },
-  { name: 'Spring Boot', level: 82, icon: SiSpringboot },
-  { name: 'REST APIs', level: 80, icon: FaCode },
-  { name: 'MySQL', level: 78, icon: FaDatabase },
-  { name: 'React', level: 76, icon: FaReact },
-  { name: 'Spring Security', level: 74, icon: SiSpringboot },
-  { name: 'JWT Authentication', level: 73, icon: FaCode },
-  { name: 'MicroServices', level: 72, icon: FaDatabase },
 ];
 
 export const projects = [

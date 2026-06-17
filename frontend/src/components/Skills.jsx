@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { skillGroups, skillLevels } from '../data/portfolioData';
+import { skillGroups } from '../data/portfolioData';
 import SectionHeading from './SectionHeading.jsx';
 
 function Skills() {
@@ -44,41 +44,6 @@ function Skills() {
         })}
       </div>
 
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
-        {skillLevels.map((skill, index) => {
-          const Icon = skill.icon;
-          return (
-            <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.45, delay: index * 0.04 }}
-              whileHover={{ y: -4 }}
-              className="glass-card group rounded-2xl p-5 transition duration-300 hover:border-cyanGlow/35 hover:shadow-cyan"
-            >
-              <div className="mb-3 flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="grid h-9 w-9 place-items-center rounded-xl bg-cyanGlow/10 text-cyanGlow transition duration-300 group-hover:bg-cyanGlow/15 group-hover:shadow-cyan">
-                    <Icon className="text-lg" />
-                  </span>
-                  <span className="font-semibold">{skill.name}</span>
-                </div>
-                <span className="text-sm text-slate-300">{skill.level}%</span>
-              </div>
-              <div className="h-2.5 overflow-hidden rounded-full bg-white/10 ring-1 ring-white/5">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.9, delay: 0.1 + index * 0.03, ease: 'easeOut' }}
-                  className="h-full rounded-full bg-gradient-to-r from-violetGlow via-fuchsia-400 to-cyanGlow shadow-cyan"
-                />
-              </div>
-            </motion.div>
-          );
-        })}
-      </div>
     </section>
   );
 }
