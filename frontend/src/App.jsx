@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import PageLoader from './components/PageLoader.jsx';
 import ScrollProgress from './components/ScrollProgress.jsx';
 import Home from './pages/Home.jsx';
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+    path="/project/:slug"
+    element={<ProjectDetails />}
+  />
       </Routes>
     </div>
   );

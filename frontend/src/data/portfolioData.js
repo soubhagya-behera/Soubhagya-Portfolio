@@ -9,9 +9,11 @@ import {
   FaTools,
 } from 'react-icons/fa';
 import { SiPostman, SiSpringboot, SiTailwindcss, SiVite } from 'react-icons/si';
-import bankingImage from '../assets/Secure-Digital-Banking-Management.webp';
+import bankingImage from '../assets/Secure-Digital-Banking-Management.png';
 import greenCartImage from '../assets/Greencart-Platform.webp';
-import pingMeImage from '../assets/PingMe-Platform.webp';
+import pingMeImage from '../assets/PingMe-Platform.png';
+import aiAssistant from '../assets/AI-Assistant-Platform.png';
+import qrImage from '../assets/QR-Image.png';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -42,13 +44,32 @@ export const skillGroups = [
     title: 'Frontend',
     icon: FaReact,
     accent: 'from-cyan-400 to-blue-500',
-    skills: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Responsive Design'],
+    skills: [
+      'React.js',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'Tailwind CSS',
+      'Responsive Design',
+    ],
   },
   {
     title: 'Backend',
     icon: FaJava,
     accent: 'from-fuchsia-400 to-violet-500',
-    skills: ['Spring Boot', 'Spring MVC', 'Hibernate', 'JPA', 'Spring Security', 'JWT', 'REST APIs', 'Microservices', 'JDBC', 'Servlets', 'JSP'],
+    skills: [
+      'Spring Boot',
+      'Spring MVC',
+      'Hibernate',
+      'JPA',
+      'Spring Security',
+      'JWT',
+      'REST APIs',
+      'Microservices',
+      'JDBC',
+      'Servlets',
+      'JSP',
+    ],
   },
   {
     title: 'Database',
@@ -60,47 +81,108 @@ export const skillGroups = [
     title: 'DevOps & Tools',
     icon: FaTools,
     accent: 'from-amber-300 to-fuchsia-500',
-    skills: ['Git', 'GitHub', 'Maven', 'Postman', 'JUnit', 'Mockito', 'Docker',' AWS (EC2, S3)', 'CI/CD' ],
+    skills: [
+      'Git',
+      'GitHub',
+      'Maven',
+      'Postman',
+      'JUnit',
+      'Mockito',
+      'Docker',
+      ' AWS (EC2, S3)',
+      'CI/CD',
+    ],
   },
 ];
 
 export const skillLevels = [
   { name: 'Java', level: 85, icon: FaJava },
-
   { name: 'Spring Boot', level: 82, icon: SiSpringboot },
-
   { name: 'REST APIs', level: 80, icon: FaCode },
-
   { name: 'MySQL', level: 78, icon: FaDatabase },
-
   { name: 'React', level: 76, icon: FaReact },
-
   { name: 'Spring Security', level: 74, icon: SiSpringboot },
-
   { name: 'JWT Authentication', level: 73, icon: FaCode },
-
   { name: 'MicroServices', level: 72, icon: FaDatabase },
 ];
 
 export const projects = [
   {
-    title: 'Secure Digital Banking Management System',
+    slug: 'banking',
+    role: 'Backend Developer',
+    duration: '3 Months',
+    teamSize: '4',
+    status: 'Completed',
+    title: 'Secure Banking Platform',
+    year: '2026',
     description:
-      'Scalable banking application with JWT authentication, OTP verification, transactions, wallet isolation, chatbot support, and instant loan system.',
-    stack: ['Java', 'Spring Boot', 'JSP', 'MySQL', 'REST APIs', 'HTML', 'CSS', 'JavaScript'],
-    metrics: ['100+ Users', '30+ REST APIs', '25% Faster Response'],
+      'A full-stack banking platform featuring transactions, OTP verification, and scalable REST API architecture.',
+    stack: [
+      'Java',
+      'Spring Boot',
+      'JSP',
+      'MySQL',
+      'REST APIs',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'BCrypt',
+      'Razorpay',
+      'Docker',
+    ],
+    features: [
+      'OTP-Based Authentication',
+      'Secure Fund Transfers',
+      'Loan Management System',
+      'AI Banking Assistant',
+      'Fraud Detection Engine',
+      'Admin Management Portal',
+    ],
+    learnings: [
+      'Spring Boot Architecture',
+      'Payment Gateway Integration',
+      'Security & Fraud Detection',
+      'Third-Party API Integration',
+    ],
+    metrics: [
+      '50+ Banking Features',
+      '10+ Integrated Modules',
+      'Secure Transactions',
+      'AI Powered Support',
+    ],
     gradient: 'from-violet-500/50 via-fuchsia-500/30 to-cyan-400/30',
     image: bankingImage,
     imageAlt: 'Secure Digital Banking Management System dashboard preview',
-    github: 'https://github.com/soubhagya-behera/secure-digital-banking-management-system',
+    github:
+      'https://github.com/soubhagya-behera/secure-digital-banking-management-system',
     demo: 'https://online-banking-system-epjg.onrender.com',
   },
   {
-    title: 'GreenCart - Full Stack E-Commerce Platform',
+    slug: 'greencart',
+    role: 'Full Stack Developer',
+    duration: '3 Months',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'GreenCart E-Commerce',
+    year: '2026',
     description:
-      'Full-stack e-commerce platform with modular backend architecture, role-based workflows, product customization, and optimized Hibernate queries.',
-    stack: ['Java', 'Spring Boot', 'REST APIs', 'MySQL', 'React.js'],
-    metrics: ['Multi-Role System', '30% Faster APIs', 'Responsive UI'],
+      'Modern e-commerce platform with role-based access, product management, and optimized backend APIs.',
+    stack: ['Java', 'Spring Boot', 'React.js', 'MySQL', 'JWT', 'Razorpay', 'REST APIs'],
+    features: [
+      'JWT Authentication',
+      'Role-Based Access Control',
+      'Shopping Cart & Checkout',
+      'Razorpay Payment Integration',
+      'Order Tracking System',
+      'Product Reviews & Ratings',
+    ],
+    learnings: [
+      'Spring Security & JWT',
+      'REST API Architecture',
+      'Payment Gateway Integration',
+      'Role-Based System Design',
+    ],
+    metrics: ['20+ REST APIs', '3 User Roles', 'Razorpay Integrated', 'Responsive UI'],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: greenCartImage,
     imageAlt: 'GreenCart e-commerce platform preview',
@@ -108,15 +190,119 @@ export const projects = [
     demo: '',
   },
   {
-    title: 'PingMe - Real Time Chat System',
+    slug: 'pingme',
+    role: 'Full Stack Developer',
+    duration: '1 Month',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'PingMe - Chat App',
+    year: '2025',
     description:
-      'Real-time chat application focused on fast messaging, active conversations, clean chat UI, and responsive communication flows.',
-    stack: ['React.js', 'Spring Boot', 'WebSocket', 'REST APIs', 'MySQL', 'JWT', 'Responsive UI'],
-    metrics: ['Real-Time Chat', 'WebSocket Messaging', 'Concurrent Users'],
+      'Real-time chat application powered by WebSocket for secure messaging and live communication.',
+    stack: [
+      'React.js',
+      'Spring Boot',
+      'WebSocket',
+      'REST APIs',
+      'MySQL',
+      'JWT',
+      'Responsive UI',
+    ],
+    features: [
+      'Real-Time Messaging',
+      'WebSocket Communication',
+      'JWT Authentication',
+      'User Presence Tracking',
+      'Responsive Chat Interface',
+      'Concurrent User Support',
+    ],
+    learnings: [
+      'WebSocket Integration',
+      'Real-Time Architecture',
+      'Spring Security',
+      'Concurrent Communication',
+    ],
+    metrics: ['Real-Time Chat', 'WebSocket Powered', 'Concurrent Users', 'Low Latency'],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: pingMeImage,
     imageAlt: 'PingMe real-time chat system preview',
     github: profile.github,
     demo: '',
+  },
+  {
+    slug: 'ai-assistant',
+    role: 'Frontend Developer',
+    duration: '1 Week',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'AI Assistant',
+    description:
+      'AI-powered assistant capable of answering queries and generating contextual responses.',
+    stack: [
+      'JavaScript (ES6)',
+      'HTML5',
+      'CSS3',
+      'Google Gemini API',
+      'Chrome Extension API',
+    ],
+    features: [
+      'AI Chat Assistant',
+      'One-click Webpage Summarization',
+      'Explain Selected Text using Right Click',
+      'Clear Chat Functionality',
+      'Powered by Google Gemini AI',
+      'Responsive UI',
+    ],
+    learnings: [
+      'Prompt Engineering',
+      'API Integration',
+      'Frontend State Management',
+      'AI Workflow Design',
+    ],
+    metrics: ['AI Powered', 'Fast Responses', 'Context Retention', 'Interactive Chat'],
+    gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
+    image: aiAssistant,
+    imageAlt: 'AI Assistant platform preview',
+    github: 'https://github.com/soubhagya-behera/ai-powered-browser-assistant',
+    demo: '',
+  },
+  {
+    slug: 'qr-generator-scanner',
+    role: 'Full Stack Developer',
+    duration: '1 Week',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'QR Generator & Scanner',
+    description:
+      'Generate and scan QR codes instantly with a fast and user-friendly interface.',
+    stack: [
+      'Java',
+      'Spring Boot',
+      'ZXing',
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'Thymeleaf',
+    ],
+    features: [
+      'Generate QR Codes from Text or URLs',
+      'Download QR Codes as PNG',
+      'Upload and Scan QR Images',
+      'Automatic Content Detection',
+      'Copy Scanned Content',
+      'Open Scanned URLs Directly',
+    ],
+    learnings: [
+      'QR Code Encoding & Decoding',
+      'Frontend-Backend Integration',
+      'REST API Integration',
+      'Responsive UI Design',
+    ],
+    metrics: ['Real-Time Scanning', 'Fast QR Processing', 'Mobile Friendly', 'Instant Results'],
+    gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
+    image: qrImage,
+    imageAlt: 'Task Manager dashboard preview',
+    github: 'https://github.com/soubhagya-behera/QR-Code-Generator-Scanner',
+    demo: 'https://qr-code-generator-scanner.onrender.com',
   },
 ];
