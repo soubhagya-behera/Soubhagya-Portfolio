@@ -66,7 +66,7 @@ export const skillGroups = [
     title: 'Database',
     icon: FaDatabase,
     accent: 'from-emerald-300 to-cyan-500',
-    skills: ['MySQL', 'PostgreSQL', 'Database Design'],
+    skills: ['MySQL', 'PostgreSQL', 'MongoDB','Database Design'],
   },
   {
     title: 'DevOps & Tools',
@@ -80,7 +80,7 @@ export const skillGroups = [
       'JUnit',
       'Mockito',
       'Docker',
-      ' AWS (EC2, S3)',
+      'AWS (EC2, S3)',
       'CI/CD',
     ],
   },
