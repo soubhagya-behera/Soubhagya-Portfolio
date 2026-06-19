@@ -281,7 +281,7 @@ export const projects = [
     metrics: ['Real-Time Scanning', 'Fast QR Processing', 'Mobile Friendly', 'Instant Results'],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: qrImage,
-    imageAlt: 'Task Manager dashboard preview',
+    imageAlt: 'QR App Platform Preview',
     github: 'https://github.com/soubhagya-behera/QR-Code-Generator-Scanner',
     demo: 'https://qr-code-generator-scanner.onrender.com',
   },
