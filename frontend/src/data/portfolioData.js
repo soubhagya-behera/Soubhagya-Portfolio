@@ -1,11 +1,11 @@
-import {FaCode, FaDatabase, FaEnvelope, FaGithub, FaJava, FaLinkedin, FaReact, FaTools, } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaEnvelope, FaGithub, FaJava, FaLinkedin, FaReact, FaTools } from 'react-icons/fa';
 import { SiPostman, SiSpringboot, SiTailwindcss, SiVite } from 'react-icons/si';
 import bankingImage from '../assets/Secure-Digital-Banking-Management.png';
 import greenCartImage from '../assets/Greencart-Platform.webp';
 import pingMeImage from '../assets/PingMe-Platform.png';
 import aiAssistant from '../assets/AI-Assistant-Platform.png';
 import qrImage from '../assets/QR-Image.png';
-import devscoutImage from '../assets/devscout-image.png'
+import devscoutImage from '../assets/devscout-image.png';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -67,7 +67,7 @@ export const skillGroups = [
     title: 'Database',
     icon: FaDatabase,
     accent: 'from-emerald-300 to-cyan-500',
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB','Database Design'],
+    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Database Design'],
   },
   {
     title: 'DevOps & Tools',
@@ -148,7 +148,15 @@ export const projects = [
     year: '2026',
     description:
       'Modern e-commerce platform with role-based access, product management, and optimized backend APIs.',
-    stack: ['Java', 'Spring Boot', 'React.js', 'MySQL', 'JWT', 'Razorpay', 'REST APIs'],
+    stack: [
+      'Java',
+      'Spring Boot',
+      'React.js',
+      'MySQL',
+      'JWT',
+      'Razorpay',
+      'REST APIs',
+    ],
     features: [
       'JWT Authentication',
       'Role-Based Access Control',
@@ -163,7 +171,12 @@ export const projects = [
       'Payment Gateway Integration',
       'Role-Based System Design',
     ],
-    metrics: ['20+ REST APIs', '3 User Roles', 'Razorpay Integrated', 'Responsive UI'],
+    metrics: [
+      '20+ REST APIs',
+      '3 User Roles',
+      'Razorpay Integrated',
+      'Responsive UI',
+    ],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: greenCartImage,
     imageAlt: 'GreenCart e-commerce platform preview',
@@ -203,7 +216,12 @@ export const projects = [
       'Spring Security',
       'Concurrent Communication',
     ],
-    metrics: ['Real-Time Chat', 'WebSocket Powered', 'Concurrent Users', 'Low Latency'],
+    metrics: [
+      'Real-Time Chat',
+      'WebSocket Powered',
+      'Concurrent Users',
+      'Low Latency',
+    ],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: pingMeImage,
     imageAlt: 'PingMe real-time chat system preview',
@@ -279,7 +297,12 @@ export const projects = [
       'REST API Integration',
       'Responsive UI Design',
     ],
-    metrics: ['Real-Time Scanning', 'Fast QR Processing', 'Mobile Friendly', 'Instant Results'],
+    metrics: [
+      'Real-Time Scanning',
+      'Fast QR Processing',
+      'Mobile Friendly',
+      'Instant Results',
+    ],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: qrImage,
     imageAlt: 'QR App Platform Preview',
@@ -287,64 +310,54 @@ export const projects = [
     demo: 'https://qr-code-generator-scanner.onrender.com',
   },
   {
-   slug: 'devscout-ai',
-role: 'Full Stack Developer',
-duration: '2 Weeks',
-teamSize: 'Individual',
-status: 'Completed',
-title: 'DevScout AI',
-year: '2026',
-
-description:
-  'AI-powered GitHub Developer Analyzer that evaluates developer profiles using GitHub API and Gemini AI to generate technical assessments, skill scores, technology insights, and recruiter-ready hiring recommendations.',
-
-stack: [
-  'Java',
-  'Spring Boot',
-  'React.js',
-  'GitHub REST API',
-  'Gemini AI',
-  'jsPDF',
-  'Recharts',
-  'REST APIs'
-],
-
-features: [
-  'GitHub Profile Analysis',
-  'AI-Powered Recruiter Summary',
-  'Technology Stack Detection',
-  'Developer Skill Scoring',
-  'Interactive Radar Skill Chart',
-  'Professional PDF Report Export',
-  'Technical Assessment Dashboard',
-  'Hiring Recommendation Engine'
-],
-
-learnings: [
-  'GitHub REST API Integration',
-  'Generative AI with Gemini API',
-  'Prompt Engineering',
-  'REST API Design',
-  'PDF Generation with jsPDF',
-  'Data Visualization using Recharts',
-  'Frontend Dashboard Design'
-],
-
-metrics: [
-  '11+ GitHub Repositories Analyzed',
-  '4 Core Skill Categories',
-  'AI-Generated Recruiter Insights',
-  'Professional One-Page PDF Report'
-],
-
-gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
-
-image: devscoutImage,
-
-imageAlt: 'DevScout AI GitHub Developer Analyzer Dashboard',
-
-github: 'https://github.com/soubhagya-behera/DevScout-AI',
-
-demo: 'https://your-demo-url.vercel.app', // Replace after deployment
+    slug: 'devscout-ai',
+    role: 'Full Stack Developer',
+    duration: '2 Weeks',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'DevScout AI',
+    year: '2026',
+    description:
+      'AI-powered GitHub Developer Analyzer that evaluates developer profiles using GitHub API and Gemini AI to generate technical assessments, skill scores, technology insights, and recruiter-ready hiring recommendations.',
+    stack: [
+      'Java',
+      'Spring Boot',
+      'React.js',
+      'GitHub REST API',
+      'Gemini AI',
+      'jsPDF',
+      'Recharts',
+      'REST APIs',
+    ],
+    features: [
+      'GitHub Profile Analysis',
+      'AI-Powered Recruiter Summary',
+      'Technology Stack Detection',
+      'Developer Skill Scoring',
+      'Interactive Radar Skill Chart',
+      'Professional PDF Report Export',
+      'Technical Assessment Dashboard',
+      'Hiring Recommendation Engine',
+    ],
+    learnings: [
+      'GitHub REST API Integration',
+      'Generative AI with Gemini AI',
+      'Prompt Engineering',
+      'REST API Design',
+      'PDF Generation with jsPDF',
+      'Data Visualization using Recharts',
+      'Frontend Dashboard Design',
+    ],
+    metrics: [
+      '11+ GitHub Repositories Analyzed',
+      '4 Core Skill Categories',
+      'AI-Generated Recruiter Insights',
+      'Professional One-Page PDF Report',
+    ],
+    gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
+    image: devscoutImage,
+    imageAlt: 'DevScout AI Platform Preview',
+    github: 'https://github.com/soubhagya-behera/DevScout-AI',
+    demo: 'https://your-demo-url.vercel.app',
   },
 ];
