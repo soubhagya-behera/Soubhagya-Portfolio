@@ -5,6 +5,7 @@ import greenCartImage from '../assets/Greencart-Platform.webp';
 import pingMeImage from '../assets/PingMe-Platform.png';
 import aiAssistant from '../assets/AI-Assistant-Platform.png';
 import qrImage from '../assets/QR-Image.png';
+import devscoutImage from '../assets/devscout-image.png'
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -284,5 +285,66 @@ export const projects = [
     imageAlt: 'QR App Platform Preview',
     github: 'https://github.com/soubhagya-behera/QR-Code-Generator-Scanner',
     demo: 'https://qr-code-generator-scanner.onrender.com',
+  },
+  {
+   slug: 'devscout-ai',
+role: 'Full Stack Developer',
+duration: '2 Weeks',
+teamSize: 'Individual',
+status: 'Completed',
+title: 'DevScout AI',
+year: '2026',
+
+description:
+  'AI-powered GitHub Developer Analyzer that evaluates developer profiles using GitHub API and Gemini AI to generate technical assessments, skill scores, technology insights, and recruiter-ready hiring recommendations.',
+
+stack: [
+  'Java',
+  'Spring Boot',
+  'React.js',
+  'GitHub REST API',
+  'Gemini AI',
+  'jsPDF',
+  'Recharts',
+  'REST APIs'
+],
+
+features: [
+  'GitHub Profile Analysis',
+  'AI-Powered Recruiter Summary',
+  'Technology Stack Detection',
+  'Developer Skill Scoring',
+  'Interactive Radar Skill Chart',
+  'Professional PDF Report Export',
+  'Technical Assessment Dashboard',
+  'Hiring Recommendation Engine'
+],
+
+learnings: [
+  'GitHub REST API Integration',
+  'Generative AI with Gemini API',
+  'Prompt Engineering',
+  'REST API Design',
+  'PDF Generation with jsPDF',
+  'Data Visualization using Recharts',
+  'Frontend Dashboard Design'
+],
+
+metrics: [
+  '11+ GitHub Repositories Analyzed',
+  '4 Core Skill Categories',
+  'AI-Generated Recruiter Insights',
+  'Professional One-Page PDF Report'
+],
+
+gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
+
+image: devscoutImage,
+
+imageAlt: 'DevScout AI GitHub Developer Analyzer Dashboard',
+
+github: 'https://github.com/soubhagya-behera/DevScout-AI',
+
+demo: 'https://your-demo-url.vercel.app', // Replace after deployment
   },
 ];
