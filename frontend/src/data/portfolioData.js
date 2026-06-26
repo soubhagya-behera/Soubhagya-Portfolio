@@ -361,3 +361,42 @@ export const projects = [
     demo: 'https://your-demo-url.vercel.app',
   },
 ];
+
+export const aboutData = {
+  intro:
+    "MCA Graduate passionate about building secure, scalable, and user-focused web applications using Java, Spring Boot, and React. I enjoy solving real-world problems through clean architecture and modern backend engineering.",
+
+  stats: [
+    {
+      title: "Projects",
+      value: "6+",
+    },
+    {
+      title: "Technologies",
+      value: "20+",
+    },
+    {
+      title: "Education",
+      value: "MCA",
+    },
+    {
+      title: "Location",
+      value: "Odisha",
+    },
+  ],
+
+  builds: [
+    "REST APIs",
+    "Authentication Systems",
+    "Full Stack Applications",
+    "AI Integrations",
+    "Responsive UI",
+  ],
+
+  learning: [
+    "Docker",
+    "AWS",
+    "Microservices",
+    "System Design",
+  ],
+};
