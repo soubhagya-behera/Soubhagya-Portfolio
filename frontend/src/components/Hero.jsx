@@ -23,7 +23,7 @@ const techBadges = [
 /* HERO STATS */
 /* ========================= */
 
-const heroStats = ["Java FullStack", "REST APIs", "3+ Projects"];
+const heroStats = ["Java FullStack", "REST APIs", "6+ Projects"];
 
 function Hero() {
   const githubLink =
