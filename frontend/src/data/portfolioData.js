@@ -13,8 +13,8 @@ export const profile = {
   email: 'soubhagyabehera074@gmail.com',
   location: 'Bhubaneswar, Odisha, India',
   resume: '/resume.pdf',
-  github: 'https://github.com/soubhagya-behera/',
-  linkedin: 'https://www.linkedin.com/in/soubhagyakumar-java/',
+  github: 'https://github.com/soubhagya-behera',
+  linkedin: 'https://www.linkedin.com/in/soubhagyakumar-java',
 };
 
 export const navLinks = [
@@ -358,14 +358,13 @@ export const projects = [
     image: devscoutImage,
     imageAlt: 'DevScout AI Platform Preview',
     github: 'https://github.com/soubhagya-behera/DevScout-AI',
-    demo: 'https://your-demo-url.vercel.app',
+    demo: 'https://dev-scout-ai.vercel.app',
   },
 ];
 
 export const aboutData = {
   intro:
     "MCA Graduate passionate about building secure, scalable, and user-focused web applications using Java, Spring Boot, and React. I enjoy solving real-world problems through clean architecture and modern backend engineering.",
-
   stats: [
     {
       title: "Projects",
