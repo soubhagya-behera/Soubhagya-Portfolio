@@ -186,7 +186,7 @@ export const projects = [
   {
     slug: 'pingme',
     role: 'Full Stack Developer',
-    duration: '1 Month',
+    duration: '2+ Month',
     teamSize: 'Individual',
     status: 'Completed',
     title: 'PingMe - Chat App',
@@ -225,7 +225,7 @@ export const projects = [
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: pingMeImage,
     imageAlt: 'PingMe real-time chat system preview',
-    github: profile.github,
+    github: 'https://github.com/soubhagya-behera/pingme',
     demo: '',
   },
   {
