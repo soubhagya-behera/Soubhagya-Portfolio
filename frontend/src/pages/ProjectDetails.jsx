@@ -37,13 +37,24 @@ function ProjectDetails() {
         </div>
 
         {/* Screenshot */}
-        <div className="group relative overflow-hidden rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-white/[0.05] to-white/[0.01] p-2 shadow-[0_0_40px_rgba(34,211,238,0.15)]">
-          <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
+        <div className="group relative overflow-hidden rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-white/[0.05] to-white/[0.01] p-2 shadow-[0_0_16px_rgba(34,211,238,0.12)] md:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
+          <div className="absolute -left-20 top-10 hidden h-72 w-72 rounded-full bg-cyan-500/10 blur-2xl md:block" />
 
-          <div className="absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl" />
+          <div className="absolute -right-20 bottom-10 hidden h-72 w-72 rounded-full bg-violet-500/10 blur-2xl md:block" />
           <img
             src={project.image}
-            alt={project.title}
+            srcSet={
+              project.imageSmall
+                ? `${project.imageSmall} 900w, ${project.image} 1920w`
+                : undefined
+            }
+            sizes="(max-width: 768px) 100vw, 1152px"
+            alt={project.imageAlt || project.title}
+            width="1920"
+            height="1024"
+            decoding="async"
+            fetchPriority="high"
+            loading="eager"
             className="w-full max-h-[700px] object-cover rounded-2xl transition duration-700 group-hover:scale-[1.02]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -56,7 +67,7 @@ function ProjectDetails() {
           </h2>
 
           <div className="grid gap-4 md:grid-cols-4">
-            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 backdrop-blur-xl hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
+            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Role
               </p>
@@ -64,7 +75,7 @@ function ProjectDetails() {
               <p className="mt-2 font-semibold text-white">{project.role}</p>
             </div>
 
-            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 backdrop-blur-xl hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
+            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Duration
               </p>
@@ -72,7 +83,7 @@ function ProjectDetails() {
               <p className="mt-2 font-semibold text-white">{project.duration}</p>
             </div>
 
-            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 backdrop-blur-xl hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
+            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Team Size
               </p>
@@ -82,7 +93,7 @@ function ProjectDetails() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 backdrop-blur-xl hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
+            <div className="rounded-3xl border border-cyan-500/10 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 px-6 py-4 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition-all duration-300">
               <p className="text-xs uppercase tracking-wider text-slate-400">
                 Status
               </p>
@@ -122,7 +133,7 @@ function ProjectDetails() {
             {project.metrics?.map((item) => (
               <div
                 key={item}
-                className="rounded-3xl border border-violet-500/10 bg-gradient-to-br from-violet-500/10 to-cyan-500/5 px-6 py-4 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition"
+                className="rounded-3xl border border-violet-500/10 bg-gradient-to-br from-violet-500/10 to-cyan-500/5 px-6 py-4 hover:scale-105 hover:shadow-[0_0_12px_rgba(168,85,247,0.2)] md:hover:shadow-[0_0_30px_rgba(168,85,247,0.25)] transition"
               >
                 <p className="font-bold text-white">{item}</p>
               </div>
@@ -140,7 +151,7 @@ function ProjectDetails() {
             {project.features?.map((feature) => (
               <div
                 key={feature}
-                className="group flex items-center gap-3 rounded-2xl border border-cyan-500/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 backdrop-blur-md hover:border-cyan-400/40 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition"
+                className="group flex items-center gap-3 rounded-2xl border border-cyan-500/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 hover:border-cyan-400/40 hover:-translate-y-1 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition"
               >
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 font-bold">
                   ✓
@@ -162,7 +173,7 @@ function ProjectDetails() {
             {project.learnings?.map((item) => (
               <div
                 key={item}
-                className="group flex items-center gap-3 rounded-2xl border border-cyan-500/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 backdrop-blur-md hover:border-cyan-400/40 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition"
+                className="group flex items-center gap-3 rounded-2xl border border-cyan-500/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 hover:border-cyan-400/40 hover:-translate-y-1 hover:shadow-[0_0_12px_rgba(34,211,238,0.12)] md:hover:shadow-[0_0_25px_rgba(34,211,238,0.15)] transition"
               >
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-cyan-500/10 text-cyan-400 font-bold">
                   ✓

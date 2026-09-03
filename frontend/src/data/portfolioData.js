@@ -1,13 +1,21 @@
 import { FaCode, FaDatabase, FaEnvelope, FaGithub, FaJava, FaLinkedin, FaReact, FaTools } from 'react-icons/fa';
 import { SiPostman, SiSpringboot, SiTailwindcss, SiVite } from 'react-icons/si';
-import bankingImage from '../assets/Secure-Digital-Banking-Management.png';
+import bankingImage from '../assets/Secure-Digital-Banking-Management.webp';
+import bankingImage900 from '../assets/Secure-Digital-Banking-Management-900.webp';
 import greenCartImage from '../assets/Greencart-Platform.webp';
-import pingMeImage from '../assets/PingMe-Platform.png';
-import aiAssistant from '../assets/AI-Assistant-Platform.png';
-import qrImage from '../assets/QR-Image.png';
-import devscoutImage from '../assets/devscout-image.png';
-import apiLimiterImage from '../assets/api-rate-limiter.png';
-import flashReserveImage from '../assets/flash-reserve.png';
+import greenCartImage900 from '../assets/Greencart-Platform-900.webp';
+import pingMeImage from '../assets/PingMe-Platform.webp';
+import pingMeImage900 from '../assets/PingMe-Platform-900.webp';
+import aiAssistant from '../assets/AI-Assistant-Platform.webp';
+import aiAssistant900 from '../assets/AI-Assistant-Platform-900.webp';
+import qrImage from '../assets/QR-Image.webp';
+import qrImage900 from '../assets/QR-Image-900.webp';
+import devscoutImage from '../assets/devscout-image.webp';
+import devscoutImage900 from '../assets/devscout-image-900.webp';
+import apiLimiterImage from '../assets/api-rate-limiter.webp';
+import apiLimiterImage900 from '../assets/api-rate-limiter-900.webp';
+import flashReserveImage from '../assets/flash-reserve.webp';
+import flashReserveImage900 from '../assets/flash-reserve-900.webp';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -143,6 +151,7 @@ export const projects = [
     ],
     gradient: 'from-violet-500/50 via-fuchsia-500/30 to-cyan-400/30',
     image: flashReserveImage,
+    imageSmall: flashReserveImage900,
     imageAlt: 'FlashReserve high-concurrency ticket reservation platform',
     github: 'https://github.com/soubhagya-behera/Flash-Reserve',
     demo: 'YOUR_LIVE_DEMO_URL',
@@ -192,6 +201,7 @@ export const projects = [
     ],
     gradient: 'from-violet-500/50 via-fuchsia-500/30 to-cyan-400/30',
     image: bankingImage,
+    imageSmall: bankingImage900,
     imageAlt: 'Secure Digital Banking Management System dashboard preview',
     github:
       'https://github.com/soubhagya-behera/secure-digital-banking-management-system',
@@ -244,6 +254,7 @@ export const projects = [
     ],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: devscoutImage,
+    imageSmall: devscoutImage900,
     imageAlt: 'DevScout AI Platform Preview',
     github: 'https://github.com/soubhagya-behera/DevScout-AI',
     demo: 'https://dev-scout-ai.vercel.app',
@@ -289,6 +300,7 @@ export const projects = [
     ],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: greenCartImage,
+    imageSmall: greenCartImage900,
     imageAlt: 'GreenCart e-commerce platform preview',
     github: 'https://github.com/soubhagya-behera/GreenCart',
     demo: '',
@@ -334,6 +346,7 @@ export const projects = [
     ],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: pingMeImage,
+    imageSmall: pingMeImage900,
     imageAlt: 'PingMe real-time chat system preview',
     github: 'https://github.com/soubhagya-behera/pingme',
     demo: '',
@@ -386,6 +399,7 @@ export const projects = [
     ],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: apiLimiterImage,
+    imageSmall: apiLimiterImage900,
     imageAlt: 'API Rate Limiter dashboard preview',
     github: 'https://github.com/soubhagya-behera/api-rate-limiter',
     demo: 'https://api-rate-limiter-frontend.onrender.com',
@@ -423,6 +437,7 @@ export const projects = [
     metrics: ['AI Powered', 'Fast Responses', 'Context Retention', 'Interactive Chat'],
     gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
     image: aiAssistant,
+    imageSmall: aiAssistant900,
     imageAlt: 'AI Assistant platform preview',
     github: 'https://github.com/soubhagya-behera/ai-powered-browser-assistant',
     demo: '',
@@ -467,6 +482,7 @@ export const projects = [
     ],
     gradient: 'from-fuchsia-400/45 via-violet-500/30 to-sky-400/30',
     image: qrImage,
+    imageSmall: qrImage900,
     imageAlt: 'QR App Platform Preview',
     github: 'https://github.com/soubhagya-behera/QR-Code-Generator-Scanner',
     demo: 'https://qr-code-generator-scanner.onrender.com',

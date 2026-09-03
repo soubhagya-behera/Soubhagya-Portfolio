@@ -32,6 +32,12 @@ function Projects() {
                 {project.image && (
                   <img
                     src={project.image}
+                    srcSet={
+                      project.imageSmall
+                        ? `${project.imageSmall} 900w, ${project.image} 1920w`
+                        : undefined
+                    }
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     alt={project.imageAlt || `${project.title} screenshot`}
                     loading="lazy"
                     width="900"

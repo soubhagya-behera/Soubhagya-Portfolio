@@ -1,14 +1,25 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useLocation } from "react-router-dom";
 import { navLinks } from "../data/portfolioData";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isProjectDetail = location.pathname.startsWith("/project/");
 
   useEffect(() => {
+    if (isProjectDetail) {
+      // On detail pages sections don't exist — avoid expensive DOM lookups per scroll
+      const onScrollDetail = () => setScrolled(window.scrollY > 20);
+      onScrollDetail();
+      window.addEventListener("scroll", onScrollDetail, { passive: true });
+      return () => window.removeEventListener("scroll", onScrollDetail);
+    }
+
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
 
@@ -25,7 +36,7 @@ function Navbar() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isProjectDetail]);
 
   const handleClick = () => setOpen(false);
 
