@@ -6,6 +6,7 @@ import pingMeImage from '../assets/PingMe-Platform.png';
 import aiAssistant from '../assets/AI-Assistant-Platform.png';
 import qrImage from '../assets/QR-Image.png';
 import devscoutImage from '../assets/devscout-image.png';
+import apiLimiterImage from '../assets/api-rate-limiter.png';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -359,6 +360,58 @@ export const projects = [
     imageAlt: 'DevScout AI Platform Preview',
     github: 'https://github.com/soubhagya-behera/DevScout-AI',
     demo: 'https://dev-scout-ai.vercel.app',
+  },
+    {
+    slug: 'api-rate-limiter',
+    role: 'Backend Developer',
+    duration: '2 Weeks',
+    teamSize: 'Individual',
+    status: 'Completed',
+    title: 'API Rate Limiter',
+    year: '2026',
+    description:
+      'Production-style API rate limiting system using Spring Boot and Redis to protect APIs from excessive traffic and enforce request limits in real time.',
+    stack: [
+      'Java',
+      'Spring Boot',
+      'Redis',
+      'Lua',
+      'REST APIs',
+      'Docker',
+      'React.js',
+      'Nginx',
+      'JUnit',
+      'Mockito',
+    ],
+    features: [
+      'Redis-Backed Rate Limiting',
+      'Atomic Lua Script Execution',
+      'Configurable Request Limits',
+      'Real-Time Rate Limit Status',
+      'Concurrent Request Protection',
+      'HTTP 429 Rate Limit Response',
+      'Dockerized Deployment',
+      'Responsive Monitoring Dashboard',
+    ],
+    learnings: [
+      'Redis-Based Distributed Rate Limiting',
+      'Atomic Operations with Lua',
+      'Concurrent Request Handling',
+      'Spring Boot Interceptor Design',
+      'Reverse Proxy Architecture',
+      'Production Deployment with Docker',
+    ],
+    metrics: [
+      '5 Requests / Window',
+      'Redis Powered',
+      'Atomic Rate Limiting',
+      'Real-Time Monitoring',
+    ],
+    gradient: 'from-cyan-400/45 via-blue-500/25 to-violet-500/35',
+    image: apiLimiterImage,
+    imageAlt: 'API Rate Limiter dashboard preview',
+    github: 'https://github.com/soubhagya-behera/api-rate-limiter',
+    demo: 'https://api-rate-limiter-frontend.onrender.com',
   },
 ];
 
