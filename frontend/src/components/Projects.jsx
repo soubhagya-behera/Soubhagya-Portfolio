@@ -23,11 +23,11 @@ function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.55, delay: index * 0.08 }}
-            className="premium-border glass-card group flex h-[420px] overflow-hidden rounded-3xl"
+            className="premium-border glass-card project-card group flex h-full min-w-0 flex-col overflow-hidden rounded-3xl"
           >
-            <div className="flex w-full flex-col">
+            <div className="flex w-full min-w-0 flex-1 flex-col">
               <div
-                className={`relative h-44 overflow-hidden bg-gradient-to-br ${project.gradient}`}
+                className={`project-image-container relative w-full shrink-0 overflow-hidden bg-gradient-to-br ${project.gradient}`}
               >
                 {project.image && (
                   <img
@@ -37,26 +37,26 @@ function Projects() {
                     width="900"
                     height="570"
                     decoding="async"
-                    className="absolute inset-0 h-full w-full object-cover object-center opacity-100 saturate-[1.08] transition duration-700 ease-out group-hover:scale-105 group-hover:saturate-[1.16]"
+                    className="project-image block h-full w-full object-cover object-center opacity-100 saturate-[1.08] transition duration-700 ease-out group-hover:scale-105 group-hover:saturate-[1.16]"
                   />
                 )}
-                <div className="absolute inset-4 rounded-3xl border border-white/10 bg-transparent transition duration-500 group-hover:border-cyanGlow/25" />
-                <div className="absolute left-7 top-7 flex gap-2">
+                <div className="pointer-events-none absolute inset-4 rounded-3xl border border-white/10 bg-transparent transition duration-500 group-hover:border-cyanGlow/25" />
+                <div className="pointer-events-none absolute left-7 top-7 flex gap-2">
                   <span className="h-3 w-3 rounded-full bg-rose-300/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-300/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-300/80" />
                 </div>
               </div>
 
-              <div className="flex flex-1 flex-col p-5 sm:p-6">
-                <h3 className="h-8 text-xl font-bold leading-snug text-white">
+              <div className="project-card-content flex flex-1 flex-col min-w-0 p-5 sm:p-6">
+                <h3 className="project-title min-w-0 break-words text-xl font-bold leading-snug text-white">
                   {project.title}
                 </h3>
-                <p className="mt-2 h-14 text-sm text-slate-300 line-clamp-2">
+                <p className="project-description mt-2 min-w-0 break-words text-sm leading-relaxed text-slate-300 line-clamp-2">
                   {project.description}
                 </p>
 
-                <div className="mt-5 flex flex-wrap gap-2">
+                <div className="project-tech mt-5 flex min-w-0 flex-wrap gap-2">
                   {project.stack.slice(0, 3).map((item) => (
                     <span
                       key={item}
@@ -72,7 +72,7 @@ function Projects() {
                     </span>
                   )}
                 </div>
-                <div className="mt-auto pt-4">
+                <div className="project-button mt-auto pt-4">
                   <Link
                     to={`/project/${project.slug}`}
                     className="glow-button w-full text-center px-4 py-2.5"

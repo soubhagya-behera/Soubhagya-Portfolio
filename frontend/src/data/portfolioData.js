@@ -7,6 +7,7 @@ import aiAssistant from '../assets/AI-Assistant-Platform.png';
 import qrImage from '../assets/QR-Image.png';
 import devscoutImage from '../assets/devscout-image.png';
 import apiLimiterImage from '../assets/api-rate-limiter.png';
+import flashReserveImage from '../assets/flash-reserve.png';
 
 export const profile = {
   name: 'Soubhagya Kumar Behera',
@@ -89,6 +90,63 @@ export const skillGroups = [
 ];
 
 export const projects = [
+    {
+    slug: 'flashreserve',
+    role: 'Backend-Focused Full Stack Developer',
+    duration: 'Ongoing',
+    teamSize: 'Individual',
+    status: 'In Progress',
+    title: 'FlashReserve - High-Concurrency Reservation Engine',
+    year: '2026',
+    description:
+      'Production-style flash-sale and ticket reservation engine designed to handle traffic spikes, prevent seat overbooking, and secure time-sensitive payments.',
+    stack: [
+      'Java 17',
+      'Spring Boot',
+      'Spring Security',
+      'JWT',
+      'PostgreSQL',
+      'Redis',
+      'Redisson',
+      'React.js',
+      'Razorpay',
+      'REST APIs',
+      'JUnit',
+      'Maven',
+    ],
+    features: [
+      'Distributed Seat Locking with Redis',
+      'PostgreSQL Optimistic Locking',
+      'Redis-Based Rate Limiting',
+      '5-Minute Seat Hold & Auto Expiration',
+      'Transactional Reservation Workflow',
+      'Razorpay Test Payment Integration',
+      'Server-Side HMAC Payment Verification',
+      'Role-Based Admin Management',
+    ],
+    learnings: [
+      'High-Concurrency System Design',
+      'Distributed Locking with Redis',
+      'Database Concurrency Control',
+      'Secure Payment Integration',
+      'Spring Security & JWT',
+      'Reservation State Management',
+      'Production-Style REST API Design',
+    ],
+    metrics: [
+      '157 Backend Tests',
+      'Redis Distributed Locking',
+      '6-Way Seat Race Tested',
+      '1 Successful Reservation',
+      '5-Minute Hold Expiration',
+      'HTTP 429 Rate Limiting',
+    ],
+    gradient: 'from-violet-500/50 via-fuchsia-500/30 to-cyan-400/30',
+    image: flashReserveImage,
+    imageAlt: 'FlashReserve high-concurrency ticket reservation platform',
+    github: 'https://github.com/soubhagya-behera/Flash-Reserve',
+    demo: 'YOUR_LIVE_DEMO_URL',
+  },
   {
     slug: 'banking',
     role: 'Backend Developer',
